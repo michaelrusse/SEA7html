@@ -5,6 +5,69 @@
 
    <title>Übung HTML-Seite erstellen</title>
    <meta charset="UTF-8"> <!-- ASCII, UTF-8, Windows-nnnn? -->
+   <style>
+     .Bild {
+             width: 200px;
+	     height: 200px;
+	     border: 10px solid black;
+           }
+
+     #Bild2 {
+             left: 200px;
+             top: 0px;
+	     position: absolute;
+     	    }
+
+     #Bild3 {
+             left: 400px;
+             top: 0px;
+             position: absolute;
+            }
+
+     #Bild4 {
+             left: 0px;
+             top: 200px;
+             position: absolute;
+            }
+
+     #Bild5 {
+             left: 200px;
+             top: 200px;
+             position: absolute;
+            }
+
+     #Bild6 {
+             left: 400px;
+             top: 200px;
+             position: absolute;
+            }
+
+     #Bild7 {
+             left: 0px;
+             top: 400px;
+             position: absolute;
+            }
+
+     #Bild8 {
+             left: 200px;
+             top: 400px;
+             position: absolute;
+            }
+
+     #Bild9 {
+             left: 400px;
+             top: 400px;
+             position: absolute;
+            }
+
+     #Bildergalarie {
+	     position: relative;
+	     width: 600px;
+             height: 600px;
+	   
+                    }
+   </style>
+
 
   </head>
 
@@ -43,7 +106,36 @@
       <li>Nachrichten</li>
     </ul>
 
-    <img src="Bilder/IMG_0192.JPG" width="150" height="200"><br>
+    <div id="Bildergalarie">
+      <div>	    
+        <img class="Bild" id="Bild1" src="Bilder/IMG_0192.JPG">
+      </div>
+      <div>
+        <img class="Bild" id="Bild2" src="Bilder/forest-6765636__340.jpg">
+      </div>
+      <div>
+	<img class="Bild" id="Bild3" src="Bilder/forest-6818683__340.jpg">
+      </div>
+      <div>
+	<img class="Bild" id="Bild4" src="Bilder/istockphoto-1297349747-170667a.jpg">
+      </div>
+      <div>
+	<img class="Bild" id="Bild5" src="Bilder/lake-6627781__340.jpg">
+      </div>
+      <div>
+	<img class="Bild" id="Bild6" src="Bilder/lake-6701636__340.jpg">
+      </div>
+      <div>
+	<img class="Bild" id="Bild7" src="Bilder/natural-6693234__340.jpg">
+      </div>
+      <div>
+        <img class="Bild" id="Bild8" src="Bilder/tree-6792528__340.jpg">
+      </div>
+      <div>
+	<img class="Bild" id="Bild9" src="Bilder/waterfall-6473754__340.jpg">
+      </div>	
+    </div><br>
+
     <br>
     <div>
       Wollen Sie auch mit auf einen Winterurlaub dann klicken Sie hier <br>
@@ -51,6 +143,4 @@
       <a href="urlaub.html"<p>Hier Buchen</p></a>
       </div>  
 
-  </body>
-
-</html>
+  </body></html>
