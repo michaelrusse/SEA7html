@@ -1,64 +1,77 @@
-     header {
+     #header {
 	     margin-left: 300px;
 	     padding: 5px;
 	     width: 800px;
 	     height: 150px;
 	     background-color: blue;
-	     border: 10px solid black;
-	   
+	     border: 10px solid yellow;
+
+             	     
             } 
 
+     img:hover {
+                 border: 5px solid green;     
+     
+               }
+
+     #text {
+            margin-left: 450px;
+	    padding: 10px;
+	    color: red;
+	     
+           }	    
      .Bild {
-             width: 200px;
+             margin-left: 400px;
+	     width: 200px;
 	     height: 200px;
-	     border: 10px solid black;
+	     border: 5px solid black;
            }
 
      #Bild2 {
-             left: 200px;
+             left: 210px;
              top: 0px;
 	     position: absolute;
      	    }
 
      #Bild3 {
-             left: 400px;
+             left: 420px;
              top: 0px;
              position: absolute;
             }
 
      #Bild4 {
              left: 0px;
-             top: 200px;
+             top: 210px;
              position: absolute;
             }
 
      #Bild5 {
-             left: 200px;
-             top: 200px;
+             left: 210px;
+             top: 210px;
              position: absolute;
             }
 
      #Bild6 {
-             left: 400px;
-             top: 200px;
+             left: 420px;
+             top: 210px;
              position: absolute;
             }
 
      #Bild7 {
              left: 0px;
-             top: 400px;
+             top: 420px;
              position: absolute;
             }
 
      #Bild8 {
-             left: 200px;
-             top: 400px;
+             left: 210px;
+             top: 420px;
              position: absolute;
             }
 
      #Bild9 {
-             left: 400px;
-             top: 400px;
+             left: 420px;
+             top: 420px;
              position: absolute;
             }
 
