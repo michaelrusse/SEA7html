@@ -5,7 +5,18 @@
 
    <title>Übung HTML-Seite erstellen</title>
    <meta charset="UTF-8"> <!-- ASCII, UTF-8, Windows-nnnn? -->
+   <link href="index.css" rel="stylesheet">
    <style>
+     header {
+	     margin-left: 300px;
+	     padding: 5px;
+	     width: 800px;
+	     height: 150px;
+	     background-color: blue;
+	     border: 10px solid black;
+	   
+            } 
+
      .Bild {
              width: 200px;
 	     height: 200px;
@@ -73,74 +84,93 @@
 
   <body>
 
-    <h1>Meine erste HLML-Seite</h1> <!-- h1 - header -->
-    <h2>08-12-2021</h2>
-    <h3>Spass haben</h3>
+    <header id="header">	  
+      <h1>Meine erste HLML-Seite</h1> <!-- h1 - header -->
+      <h2>08-12-2021</h2>
+      <h3>Spass haben</h3>
+    </header>
 
-    <p>Hier sind meine ersten Schritte mit HTML zu sehen</p>
+  
 
-    <p>Geholfen hat mir hier bei die Internetseit </p> 
+    <main id="main">
+      <div id="text">
+        <p>Hier sind meine ersten Schritte mit HTML zu sehen</p>
 
-    <a href="https://developer.mozilla.org/de/docs/Learn/HTML"<p>HTML - Lerne Webentwicklung | MDN</p></a>
-    
+        <p>Geholfen hat mir hier bei die Internetseit </p> 
 
-    <div>
-      Ein div ist einfach eine "Klammer" um andere Dinge
-    </div>
-    <div>
-      Abgrenzung ist das Stichwort!!!
-    </div>
+        <a href="https://developer.mozilla.org/de/docs/Learn/HTML"<p>HTML - Lerne Webentwicklung | MDN</p></a>
+      </div>
 
-    <p> Weitere <strong><em>Informationen</em></strong> finden sie unter den Themen: </p>
-    <ul>
-      <li>Politik</li>
-      <li>Sport</li>
-        <ol>
-         <li>Fußball</li>
-         <li>Handball</li>
-         <li>Basketball</li>
-         <li>Eishockey</li>
-         <li>Weitere Sportarten</li>
-	</ol>
-      <li>Kultur</li>
-      <li>Nachrichten</li>
-    </ul>
+      <div>
+        Ein div ist einfach eine "Klammer" um andere Dinge
+      </div>
+      <div>
+        Abgrenzung ist das Stichwort!!!
+      </div>
 
-    <div id="Bildergalarie">
-      <div>	    
-        <img class="Bild" id="Bild1" src="Bilder/IMG_0192.JPG">
+      <div id="liste">
+         <p> Weitere <strong><em>Informationen</em></strong> finden sie unter den Themen: </p>
+         <ul>
+           <li>Politik</li>
+           <li>Sport</li>
+             <ol>
+               <li>Fußball</li>
+               <li>Handball</li>
+               <li>Basketball</li>
+               <li>Eishockey</li>
+               <li>Weitere Sportarten</li>
+	    </ol>
+           <li>Kultur</li>
+           <li>Nachrichten</li>
+         </ul>
       </div>
-      <div>
-        <img class="Bild" id="Bild2" src="Bilder/forest-6765636__340.jpg">
-      </div>
-      <div>
-	<img class="Bild" id="Bild3" src="Bilder/forest-6818683__340.jpg">
-      </div>
-      <div>
-	<img class="Bild" id="Bild4" src="Bilder/istockphoto-1297349747-170667a.jpg">
-      </div>
-      <div>
-	<img class="Bild" id="Bild5" src="Bilder/lake-6627781__340.jpg">
-      </div>
-      <div>
-	<img class="Bild" id="Bild6" src="Bilder/lake-6701636__340.jpg">
-      </div>
-      <div>
-	<img class="Bild" id="Bild7" src="Bilder/natural-6693234__340.jpg">
-      </div>
-      <div>
-        <img class="Bild" id="Bild8" src="Bilder/tree-6792528__340.jpg">
-      </div>
-      <div>
-	<img class="Bild" id="Bild9" src="Bilder/waterfall-6473754__340.jpg">
-      </div>	
-    </div><br>
 
-    <br>
-    <div>
-      Wollen Sie auch mit auf einen Winterurlaub dann klicken Sie hier <br>
-    </div><br>
-      <a href="urlaub.html"<p>Hier Buchen</p></a>
-      </div>  
+     <div id="Bildergalarie">
+       <div>	    
+         <img class="Bild" id="Bild1" src="Bilder/IMG_0192.JPG">
+       </div>
+      
+       <div>
+         <img class="Bild" id="Bild2" src="Bilder/forest-6765636__340.jpg">
+       </div>
+      
+       <div>
+         <img class="Bild" id="Bild3" src="Bilder/forest-6818683__340.jpg">
+       </div>
+      
+       <div>
+	 <img class="Bild" id="Bild4" src="Bilder/istockphoto-1297349747-170667a.jpg">
+       </div>
+     
+       <div>
+	 <img class="Bild" id="Bild5" src="Bilder/lake-6627781__340.jpg">
+       </div>
+      
+       <div>
+	 <img class="Bild" id="Bild6" src="Bilder/lake-6701636__340.jpg">
+       </div>
+      
+       <div>
+	 <img class="Bild" id="Bild7" src="Bilder/natural-6693234__340.jpg">
+       </div>
+      
+       <div>
+         <img class="Bild" id="Bild8" src="Bilder/tree-6792528__340.jpg">
+       </div>
+      
+       <div>
+	 <img class="Bild" id="Bild9" src="Bilder/waterfall-6473754__340.jpg">
+       </div>	
+     </div><br>
+
+     <br>
+     <div>
+       Wollen Sie auch mit auf einen Winterurlaub dann klicken Sie hier <br>
+     </div><br>
+       <a href="urlaub.html"<p>Hier Buchen</p></a>
+     </div>
+    </main>  
 
   </body></html>
+
+
