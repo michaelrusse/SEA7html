@@ -69,6 +69,7 @@ function calc_exponential() {
 
 function clean() {  
     document.getElementById("outputBox_rechner").value = "";
+	
 }
 
 function ausrechnenfor() {
@@ -77,6 +78,57 @@ function ausrechnenfor() {
 	var ausgabe =faculty_uebung (dieZahl);
 
 	document.getElementById("outputBox_rechner").value = ausgabe;
+}
+
+function plus(){
+	var linkeroperand = document.getElementById("outputBox_rechner").value;
+	document.getElementById("operandlinks").value = linkeroperand;
+	document.getElementById("operator").value = "+";
+	clean();
+}
+
+function minus(){
+	var linkeroperand = document.getElementById("outputBox_rechner").value;
+	document.getElementById("operandlinks").value = linkeroperand;
+	document.getElementById("operator").value = "-";
+	clean();
+}
+
+function mal(){
+	var linkeroperand = document.getElementById("outputBox_rechner").value;
+	document.getElementById("operandlinks").value = linkeroperand;
+	document.getElementById("operator").value = "*";
+	clean();
+}
+
+function geteilt(){
+	var linkeroperand = document.getElementById("outputBox_rechner").value;
+	document.getElementById("operandlinks").value = linkeroperand;
+	document.getElementById("operator").value = "/";
+	clean();
+}
+
+function gleich(){
+	var rechteroperand = document.getElementById("outputBox_rechner").value;
+	var linkeroperand = document.getElementById("operandlinks").value; 
+	var operator = document.getElementById("operator").value;
+
+	switch(operator){
+		case "+": var result = Number(linkeroperand) + Number(rechteroperand);
+				  document.getElementById("outputBox_rechner").value = result;
+				  break;
+		case "-": var result = Number(linkeroperand) - Number(rechteroperand);
+				  document.getElementById("outputBox_rechner").value = result;
+				  break;
+		case "*": var result = Number(linkeroperand) * Number(rechteroperand);
+				  document.getElementById("outputBox_rechner").value = result;
+				  break;
+		case "/": var result = Number(linkeroperand) / Number(rechteroperand);
+				  document.getElementById("outputBox_rechner").value = result;
+				  break;
+	}
+	
+	
 }
 
 function addZeroToTextbox() { addNumberToTextbox("0"); }
@@ -104,3 +156,8 @@ document.getElementById("button_sqrt").addEventListener("click",calc_Sqrt);
 document.getElementById("button_exponential").addEventListener("click",calc_exponential);
 document.getElementById("button_c").addEventListener("click",clean);
 document.getElementById("button_fac").addEventListener("click",ausrechnenfor);
+document.getElementById("button_plus").addEventListener("click",plus);
+document.getElementById("button_minus").addEventListener("click",minus);
+document.getElementById("button_mal").addEventListener("click",mal);
+document.getElementById("button_geteilt").addEventListener("click",geteilt);
+document.getElementById("button_gleich").addEventListener("click",gleich);
