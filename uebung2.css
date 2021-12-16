@@ -10,13 +10,26 @@
     color:mediumvioletred;
     height: 30px;
 }
-#name {
+
+#eingabe {
     border: 2px solid black;
     color:mediumvioletred;
     height: 30px;
 }
 
-#eingabe {
+#strasse {
+    border: 2px solid black;
+    color:mediumvioletred;
+    height: 30px;
+}
+
+#postleitzahl {
+    border: 2px solid black;
+    color:mediumvioletred;
+    height: 30px;
+}
+
+#stadt {
     border: 2px solid black;
     color:mediumvioletred;
     height: 30px;

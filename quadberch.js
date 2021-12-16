@@ -3,9 +3,9 @@ function berechnung() {
     var x1 = document.getElementById("x1").value;
     var x = document.getElementById("x").value;
     var e = document.getElementById("Ergebnis").value;
-    var Q = x - e 
-    var p = x1/x2
-    var q = Q/x2
+    var Q = x - e; 
+    var p = x1/x2;
+    var q = Q/x2;
     X1 = -p/2 + Math.sqrt(((p/2)*(p/2)) - q);
     X2 = -p/2 - Math.sqrt(((p/2)*(p/2)) - q);   
     console.log(X1);
