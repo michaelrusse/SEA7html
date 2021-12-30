@@ -1,0 +1,41 @@
+#autor {
+    border: 2px solid black;
+    color:mediumvioletred;
+    height: 30px;
+    
+     
+}
+#titel {
+    border: 2px solid black;
+    color:mediumvioletred;
+    height: 30px;
+}
+
+#eingabe {
+    border: 2px solid black;
+    color:mediumvioletred;
+    height: 30px;
+}
+
+#zeichner {
+    border: 2px solid black;
+    color:mediumvioletred;
+    height: 30px;
+}
+
+#art {
+    border: 2px solid black;
+    color:mediumvioletred;
+    height: 30px;
+}
+
+#isbn {
+    border: 2px solid black;
+    color:mediumvioletred;
+    height: 30px;
+}
+
+input[type="text"]
+{
+    font-size:20px;
+}
